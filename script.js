@@ -343,11 +343,11 @@ musicPlayBtn.addEventListener("click", () => {
 
 
 document.getElementById("musicVolumeUpBtn").addEventListener("click", () => {
-  audioPlayer.volume = Math.min(audioPlayer.volume + 0.1, 1);
+  audioPlayer.volume = Math.min(audioPlayer.volume + 1, 100);
 });
 
 document.getElementById("musicVolumeDownBtn").addEventListener("click", () => {
-  audioPlayer.volume = Math.max(audioPlayer.volume - 0.1, 0);
+  audioPlayer.volume = Math.max(audioPlayer.volume - 1, 0);
 });
 
 // ربط الأحداث
